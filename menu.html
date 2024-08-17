@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+  
+ .context{
+  border: 1px solid white;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 90%;
+  
+  
+ }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     
+    
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color:blue;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 600;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 2px 6px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h1> Jala Project</h1>
+  <a class="active" href="#home">Home</a>
+  <a href="collapsable.html">Collapsable</a>
+  <a href="cssframes.html">Cssframes</a>
+  <a href="autocomplete.html">AutoComplete</a>
+  <a href="Iframe.html">I Frames</a>
+  <a href="images.html">Images</a>
+  <a href="links.html">Links</a>
+  <a href="menu.html">Menu</a>
+  <a href="multipletab.html">Multiple Tabs</a>
+  <a href="popups.html">Popups</a>
+  <a href="slider.html">Slider</a>
+  <a href="tooltips.html">Tooltips</a>
+  <a href="employees.html">Employess</a>
+  <a href="search.html">Search</a>
+  
+ 
+
+
+  
+
+
+    <body>
+    
+    
+    
+    
+</div>
+<div>
+
+
+    <div class="context">
+    <h1>
+    <a text-align="margin-right" href="login.html">Logout</a> 
+    </h1>
+  </div>
+  
+</div>
+<center>
+<body style="background-color:white;">
+
+  <div class="navbar">
+    <a href="#home" onclick="myfunctionm()">Frontend</a>
+    <a href="#news" onclick="myfunctionn()">Backend</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="myfun()">java</a>
+        <a href="#" onclick="myfunc()"> python</a>
+        <a href="#"onclick="myfunt()">selenium</a>
+        <a href="#"onclick="myfunti()">database</a>
+      </div>
+    </div> 
+  </div>
+  
+  <h1 id="demo"></h1>
+  <h1 id="demo1"></h1>
+  <h1 id="demo2"></h1>
+  <h1 id="demo3"></h1>
+  <h1 id="d"></h1>
+  <h1 id="de"></h1>
+  
+  <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+</center>
+
+</body>
+<script>
+  function myfun(){
+  document.getElementById("demo").innerHTML = " you clicked java";
+  
+  }
+  function myfunc(){
+  document.getElementById("demo1").innerHTML = "you clicked python";
+  }
+  function myfunt(){
+  document.getElementById("demo2").innerHTML = " you clicked selenium";
+  }
+  function myfunti(){
+  document.getElementById("demo3").innerHTML = " you clicked database";
+  }
+  function myfunctionm(){
+  document.getElementById("de").innerHTML = " you clicked Frontend";
+  
+  }
+  function myfunctionn(){
+  document.getElementById("d").innerHTML = " you clicked Backend";
+  
+  }
+  </script>
+</html>
